@@ -4,6 +4,7 @@ z = 2
 
 r = 10 # для круго-подобных
 
+
 def per_k(A):
     return print("Площадь квадртата =",A*2)
 
@@ -15,6 +16,7 @@ def per_pt(A, B):
 
 def per_kr(A):
     return print("Площадь круга ≈",3.1415926535 * (A*A))
+
 
 per_k(x)
 per_p(x, y)
