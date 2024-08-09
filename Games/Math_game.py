@@ -6,8 +6,8 @@ def greet() -> None:
 
 
 def play(score: int) -> int:
-    a = randint(2, 200)
-    b = randint(2, 100)
+    a = randint(2, 20)
+    b = randint(2, 10)
     operations = ("+", "-", "*", "/")
 
     selected_operation = randint(0, 3)
