@@ -1,25 +1,32 @@
-x = 2 # для прямоугольных
-y = 3
-z = 2
-
-r = 10 # для круго-подобных
+import os
 
 
-def per_k(A):
-    return print("Площадь квадртата =",A*2)
-
-def per_p(A, B):
-    return print("Площадь прямоугольника =",A*B)
-
-def per_pt(A, B):
-    return print("Площадь прямоугольного треугольника =",(A*B)/2)
-
-def per_kr(A):
-    return print("Площадь круга ≈",3.1415926535 * (A*A))
+def greet():
+    print("Добро пожалуйста в систему!\n")
 
 
-per_k(x)
-per_p(x, y)
-per_pt(x, y)
-per_kr(r)
+# def system():
 
+
+def vhod():
+    tries = 0
+    password = "A15bsp50%/"
+    enter = None
+    while password != enter:
+        enter = input("Пожалуйста введите пароль :")
+        if password != enter:
+            tries += 1
+            print("Пароль неверный, попробуйте снова!")
+        if tries == 5:
+            print("Запускаю протокол выключения")
+            os.system('shutdown /s /t 10')
+    if password == enter:
+        print("Вы успешно вошли в систему!")
+        # system()
+
+
+
+if __name__ == '__main__':
+    greet()
+    vhod()
+    
