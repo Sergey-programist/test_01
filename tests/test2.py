@@ -1,32 +1,15 @@
-import os
+print("Напиши сколько тебе лет и я скажу кто ты...")
 
+age = int(input("Сколько тебе лет?    "))
 
-def greet():
-    print("Добро пожалуйста в систему!\n")
+def skoklet(a):
+    if a < 13:
+        return print('Ты ребёнок')
+    if 12 < a < 18:
+        return print('Ты подросток')
+    if 17 < a < 50:
+        return print('Ты взрослый')
+    if a > 49:
+        return print('Ты дед')
 
-
-# def system():
-
-
-def vhod():
-    tries = 0
-    password = "A15bsp50%/"
-    enter = None
-    while password != enter:
-        enter = input("Пожалуйста введите пароль :")
-        if password != enter:
-            tries += 1
-            print("Пароль неверный, попробуйте снова!")
-        if tries == 5:
-            print("Запускаю протокол выключения")
-            os.system('shutdown /s /t 10')
-    if password == enter:
-        print("Вы успешно вошли в систему!")
-        # system()
-
-
-
-if __name__ == '__main__':
-    greet()
-    vhod()
-    
+skoklet(age) 
