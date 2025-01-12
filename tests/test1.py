@@ -5,8 +5,6 @@ def greet():
     print("Добро пожалуйста в систему!\n")
 
 
-# def system():
-
 
 def vhod():
     tries = 0
@@ -22,7 +20,6 @@ def vhod():
             os.system('shutdown /s /t 10')
     if password == enter:
         print("Вы успешно вошли в систему!")
-        # system()
 
 
 
